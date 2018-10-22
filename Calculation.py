@@ -33,7 +33,7 @@ def init_args(input_data, properties_data):
     quantities = input_data['quantities']
     q = []
     for quantity in quantities:
-        q.append(float(quantity['quantity']))
+        q.append(quantity['quantity'])
         if len(q) != 1:
             q.append(None)
     q.pop()
